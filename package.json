@@ -12,5 +12,8 @@
   "dependencies": {
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@hypernym/nuxt-gsap": "^2.4.2"
   }
 }
