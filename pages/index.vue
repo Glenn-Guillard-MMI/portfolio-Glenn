@@ -1,3 +1,5 @@
 <template>
-  <HeadComponent></HeadComponent>
+  <html>
+    <HeadComponent></HeadComponent>
+  </html>
 </template>

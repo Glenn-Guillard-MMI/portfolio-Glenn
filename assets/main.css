@@ -1,6 +1,7 @@
 /*Variables*/
 :root {
   --red-100: #bb0c0c;
+  --primary-color: #fef0e0;
 }
 
 /*Font*/
@@ -15,7 +16,7 @@
 }
 /*css*/
 body {
-  background-color: #fef0e0;
+  background-color: var(--primary-color);
   background-image: url("../static/images/backgroud.png");
 }
 
@@ -42,4 +43,84 @@ header {
 header img {
   margin-top: 2.25rem;
   height: 50rem;
+}
+
+.link-image-title img {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+}
+
+.link-image-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  color: var(--primary-color);
+  background-color: var(--red-100);
+  border: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.406rem;
+  padding-bottom: 0.406rem;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: var(--red-100);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-image-title:hover {
+  box-shadow: 0px 0px 20px 2px var(--red-100);
+}
+#buttons-in-header {
+  margin-top: 1.5rem;
+  gap: 1rem;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    justify-content: center;
+    text-align: center;
+    margin-top: 15vh;
+  }
+  header #eiffelTower {
+    display: none;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+  header h2 {
+    font-size: 4rem;
+  }
+  #buttons-in-header {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    margin-top: 22vh;
+  }
+  header h1 {
+    font-size: 3.2rem;
+  }
+  header h2 {
+    font-size: 2.5rem;
+  }
+  .link-image-title {
+    font-size: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #buttons-in-header {
+    flex-direction: column;
+  }
+
+  .link-image-title img {
+    width: 35px;
+    height: 35px;
+  }
 }
