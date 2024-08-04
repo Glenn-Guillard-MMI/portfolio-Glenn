@@ -1,0 +1,3 @@
+<template>
+  <HeadComponent></HeadComponent>
+</template>
