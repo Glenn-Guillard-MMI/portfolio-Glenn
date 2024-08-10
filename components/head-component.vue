@@ -2,7 +2,7 @@
   <header>
     <div>
       <h1 class="pres">Glenn <br />Guillard</h1>
-      <h2 class="pres">Développeur web</h2>
+      <h2 class="pres">{{ $t("function") }}</h2>
       <div id="buttons-in-header">
         <a
           class="link-image-title"
