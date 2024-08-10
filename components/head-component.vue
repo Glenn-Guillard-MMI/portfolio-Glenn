@@ -9,7 +9,7 @@
           href="https://fr.linkedin.com/in/glenn-guillard-08204724a"
           target="_blank"
         >
-          <img src="../static/images/LinkedIn.svg" alt="LinkedIn" />Linkdin
+          <img src="../static/images/LinkedIn.svg" alt="LinkedIn" />Linkedin
         </a>
         <a
           class="link-image-title"
