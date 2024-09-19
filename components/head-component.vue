@@ -9,14 +9,17 @@
           href="https://fr.linkedin.com/in/glenn-guillard-08204724a"
           target="_blank"
         >
-          <img src="../static/images/LinkedIn.svg" alt="LinkedIn" />Linkedin
+          <img
+            src="../static/images/LinkedIn.svg"
+            alt="icon LinkedIn svg"
+          />Linkedin
         </a>
         <a
           class="link-image-title"
           href="https://github.com/Glenn-Guillard-MMI"
           target="_blank"
         >
-          <img src="../static/images/GitHub.svg" alt="github" />Github
+          <img src="../static/images/GitHub.svg" alt="icon github svg" />Github
         </a>
       </div>
     </div>

@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: LondrinaShadow;
-  src: url(../static/fonts/Londrina_Shadow/LondrinaShadow-Regular.ttf);
+  font-family: poppins;
+  src: url(../static/fonts/Poppins/Poppins-Regular.ttf);
 }
 /*css*/
 body {
@@ -29,11 +29,35 @@ h1 {
 }
 
 h2 {
-  font-family: LondrinaShadow;
-  color: var(--red-100);
+  font-family: notable;
+  color: transparent;
   font-size: 4rem;
   font-weight: 500;
   margin: 0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--red-100);
+}
+
+h3 {
+  font-family: notable;
+  color: var(--red-100);
+  font-size: 3rem;
+  margin-bottom: 0.25rem;
+  margin-left: 8rem;
+  overflow: hidden;
+}
+
+h4 {
+  font-family: notable;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: poppins;
+
+  font-size: 1.75rem;
+  margin-top: 0;
 }
 
 header {
@@ -52,6 +76,7 @@ header img {
 }
 
 .link-image-title {
+  font-family: poppins;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -87,6 +112,47 @@ header img {
   width: 3.5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10rem;
+}
+
+/*about*/
+.highlight {
+  color: var(--red-100);
+}
+
+#descript {
+  font-family: poppins;
+  text-align: justify;
+}
+
+#about img {
+  width: 25rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+#about p {
+  font-size: 1.25rem;
+}
+
+#card-profil {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.prentation {
+  width: 60% !important;
+}
+
+.text-full {
+  color: var(--red-100);
+}
+
+.text-stoke {
+  -webkit-text-stroke-width: 0.5px;
+  color: transparent;
+  -webkit-text-stroke-color: var(--red-100);
 }
 
 @media screen and (max-width: 1200px) {
@@ -104,11 +170,17 @@ header img {
   header h2 {
     font-size: 4rem;
   }
+  h3 {
+    font-size: 2.5rem;
+  }
   #buttons-in-header {
     justify-content: center;
   }
   #chevron {
     margin-top: 5rem;
+  }
+  .prentation {
+    width: 75% !important;
   }
 }
 
@@ -122,10 +194,19 @@ header img {
   header h2 {
     font-size: 2.5rem;
   }
+  h3 {
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .link-image-title {
     font-size: 1.25rem;
     margin-left: auto;
     margin-right: auto;
+  }
+  .prentation {
+    width: 95% !important;
   }
 
   #buttons-in-header {

@@ -2,13 +2,26 @@
   <html>
     <HeadComponent></HeadComponent>
     <div id="chevron">
-      <img id="chvr1" alt="chevron" src="/static/images/Chevron-Down.svg" />
-      <img id="chvr2" alt="chevron" src="/static/images/Chevron-Down.svg" />
+      <img
+        id="chvr1"
+        alt="icon chevron first"
+        src="/static/images/Chevron-Down.svg"
+      />
+      <img
+        id="chvr2"
+        alt="icon chevron second"
+        src="/static/images/Chevron-Down.svg"
+      />
     </div>
+    <main>
+      <AboutComponent></AboutComponent>
+    </main>
   </html>
 </template>
 
 <script setup lang="ts">
+import AboutComponent from "~/components/about-component.vue";
+
 const { $gsap } = useNuxtApp();
 onMounted(() => {
   $gsap.from("#chevron", {
